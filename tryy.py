@@ -27,7 +27,6 @@ options.add_argument('--headless')                 #屋頭模式
 #times = input("how many times in a message")
 #total = input("how many message you want to leave")
 accountworld = null
-password_ = "omwarbuc34"
 url = "https://www.facebook.com/permalink.php?story_fbid=pfbid0vPcY5QY4oe29z4xv2CnhrEf65B6gKdcmGbeChMULrYjy3VT5s5HFK7qp25aoVK7kl&id=100013014283308"
 message_ = "哭哭哭哭眼淚是珍珠"
 times = 2

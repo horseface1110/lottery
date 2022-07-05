@@ -11,9 +11,7 @@ import sqlite3
 
 app = Flask(__name__)
 bootstrap = Bootstrap(app)
-account = "oloomb6@gmail.com"         #############  account 記得要切掉非字母數字的東西
-account2 = "oloomb6gmailcom"
-password_ = "omwarbuc34"
+
 
 ########################SQlite#######################################
 
