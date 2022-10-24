@@ -1,26 +1,85 @@
-<!DOCTYPE html>
-<html lang="zh-Hant-TW">
-    <head>
-        <meta charset="utf-8">   <!-- utf-8編碼，中文不會產生亂碼 -->
-        <title>醜爆炸網頁</title>  <!-- 網頁標題 -->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- 指定螢幕寬度為裝置寬度，畫面載入初始縮放比例100%-->
-     </head>
-    <body bgcolor="#434343">
-      <form method='post' action="#"> 
-      <center>
-      </br></br>
-      <input type = "url" name = 'url' placeholder = "請輸入貼文連結" required = "required"></br></br>
-      <input type = "number" name = 'number' placeholder = "請輸入留言數量" min = "0" ></br></br>
-      <input type = "number" name = 'population' placeholder = "請輸入一則留言標記人數" min = "0"></br></br>
-      <input type = "text" name = 'message' placeholder = "請輸入一則留言字串" required = "required"></br></br>
-      <button type = "submit" value = "enter" name = "enter">送出</button>
-      <hr size="2dp" align="center" width="92%" color = "#91989F"></br>
-      </center>
-      </form>
-      <form method = 'post' action="##">
-        <center>
-        <button type = "submit" value = "friend" name = "friend" style="width:174px; border-radius:15dp">好友表單</button>
-        </center>
-      </form>
-      </body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel = "stylesheet" type = "text/css" href="/static/css/bootstrap.min.css">
+ 
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <div class="container">
+        <div class="row">
+            <div class="col-6 mx-auto my-5">
+              <form method='post' action="#"> 
+                    <div class="mb-3">
+                      <label for="url" class="form-label">貼文連結</label>
+                      <input  type = "url" name = 'url' class="form-control" id="url" aria-describedby="url" required = "required">
+                    </div>
+                    <div class="mb-3">
+                      <label for="nember" class="form-label">留言數量</label>
+                      <input type = "number" name = 'number' class="form-control" id="number" required = "required">
+                    </div>
+                    <div class="mb-3">
+                        <label for="nember" class="form-label">一則留言標記人數</label>
+                        <input type = "number" name = 'population' class="form-control" id="number" required = "required">
+                    </div>
+                    <div class="mb-3">
+                      <label for="nember" class="form-label">自第幾位開始標記</label>
+                      <input type = "number" name = 'ranking' class="form-control" id="ranking" required = "required" value="1">
+                    </div>
+                    <div class="mb-3">
+                        <label for="nember" class="form-label">要求的留言字串</label>
+                        <input type = "text" name = 'message' class="form-control" id="number" required = "required">
+                    </div>
+                    <button type="submit" class="btn btn-outline-warning" value = "enter" name = "enter" data-bs-toggle="modal" data-bs-target="#exampleModal">發出留言</button>
+
+                </form>
+            </div>
+            <hr style="filter: alpha(opacity=100,finishopacity=0,style=3)" width="20%" color="#6f5499" size="3" />
+            <form method='post' action="#"> 
+              <div class="col-8 mx-auto my-5">
+                <div class="d-grid gap-2" role="group" aria-label="Basic outlined example">                 
+                    <button type = "submit" value = "friend" name = "friend" class="btn btn-outline-info ">編輯好友表單</button>
+                </div>
+              </div>
+            </form>
+        </div>
+    </div>
+    <!-- Button trigger modal -->
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>請確認欄位都已填寫</p>
+            <p>請待網頁執行結束再下新的指令</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    -->
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    
+    <script src="/static/js/popper.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+  </body>
 </html>
+
