@@ -24,10 +24,10 @@
 # 環境搭建
 * pip install Flask-SQLAlchemy
 * pip install tomlkit
-* ```https://chromedriver.storage.googleapis.com/index.html?path=107.0.5304.62/```
+* https://chromedriver.storage.googleapis.com/index.html?path=107.0.5304.62/
 * 要有chrome
 * pip install selenium
-* <font color = "dd0000">find_element_By_Name -> find_element(By.Name , "")</font>
+* <font color = "dd0000">find_element_By_Name -> find_element ( By.Name , " " ) </font>
    需先```from selenium.webdriver.common.by import By```
    詳細請參考網頁：https://www.selenium.dev/documentation/webdriver/elements/finders/
 
