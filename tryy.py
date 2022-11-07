@@ -7,6 +7,7 @@ from time import sleep
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 import sqlite3
+from selenium.webdriver.common.by import By
 
  
 
@@ -43,11 +44,11 @@ def login(account , password_ ):
     #global driver
     #driver = webdriver.Chrome(chrome_options=options )
     driver.get("https://www.facebook.com/")
-    email = driver.find_element_by_name("email")
+    email = driver.find_element(By.NAME,"email")
     email.send_keys(account)
-    password = driver.find_element_by_name("pass")
+    password = driver.find_element(By.NAME,"pass")
     password.send_keys(password_)
-    login = driver.find_element_by_name("login").click()
+    login = driver.find_element(By.NAME,"login").click()
     # login.onclick()
     global accountworld 
     accountworld = account.replace('@' , '')
@@ -76,7 +77,7 @@ def hole(url , total , times , message_ , numberName):
     driver.get(url)
     sleep(1)
 
-    textbox = driver.find_elements_by_css_selector("[aria-label='留言']")[1]   #因為有兩個 所以加s 然後用陣列的感覺
+    textbox = driver.find_elements(By.CSS_SELECTOR,"[aria-label='留言']")[1]   #因為有兩個 所以加s 然後用陣列的感覺
     
     
     for i in range(0,total ):

@@ -20,6 +20,19 @@
    ```
    做一個可以改動條件的無窮迴圈，令一個變數為TRUE確保迴圈繼續，再依照輸入調整變數的值，視狀況結束迴圈
 
+
+# 環境搭建
+* pip install Flask-SQLAlchemy
+* pip install tomlkit
+* ```https://chromedriver.storage.googleapis.com/index.html?path=107.0.5304.62/```
+* 要有chrome
+* pip install selenium
+* <font color = "dd0000">find_element_By_Name -> find_element(By.Name , "")</font>
+   需先```from selenium.webdriver.common.by import By```
+   詳細請參考網頁：https://www.selenium.dev/documentation/webdriver/elements/finders/
+
+
+
 # flask
 url_for()裡面放的是py函式名稱。
 
